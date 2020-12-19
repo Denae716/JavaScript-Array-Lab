@@ -2,19 +2,20 @@ class ArrayUtils{
 
 
      isEmpty(array){
-        if (array.length === 0){
+        if (array.length !== 0){
         return false;
         }
     }
     
     append(original, value){
-        
-        return original.push(value);
+        original 3.
+
+        return
     }
 
     clone(original){
         
-        return original.slice();
+        return original
     }
 
     subArray(original, from, to){
@@ -33,8 +34,10 @@ class ArrayUtils{
     }
 
     indexOf(original, value){
-        
-        return original.indexOf(value);
+        for (let i = 0; i <= original.length; i ++){
+            i += value
+        }
+        return value
     }
 
     remove(original, value){
