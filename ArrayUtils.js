@@ -23,8 +23,9 @@ class ArrayUtils{
     }
 
     equals(arr1, arr2){
-        
+        if(arr1 !== arr2){
         return false;
+        }
     }
 
     fill(original, value){
