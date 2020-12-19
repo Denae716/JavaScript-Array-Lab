@@ -8,8 +8,8 @@ class ArrayUtils{
     }
     
     append(original, value){
-        original += value
-        return original;
+        
+        return original.push(value);
     }
 
     clone(original){
