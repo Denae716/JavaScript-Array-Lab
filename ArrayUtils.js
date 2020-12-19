@@ -8,26 +8,44 @@ class ArrayUtils{
     }
     
     append(original, value){
+        original += value
+        return original;
+    }
+
+    clone(original){
         
         return original;
     }
 
-    clone(original){return original;}
+    subArray(original, from, to){
+        
+        return original;
+    }
 
-    subArray(original, from, to){return original;}
+    equals(arr1, arr2){
+        
+        return false;
+    }
 
-    equals(arr1, arr2){return false;}
+    fill(original, value){
 
-    fill(original, value){}
+    }
 
-    indexOf(original, value){return -1;}
+    indexOf(original, value){
+        
+        return -1;
+    }
 
-    remove(original, value){return original;}
+    remove(original, value){
+        
+        return original;
+    
+    }
 
-    reverse(original){}
+    reverse(original){
+
+    }
     
 }
 
-isEmpty(array){return false;}
-const number = []
-isEmpty(number)
+
