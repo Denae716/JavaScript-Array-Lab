@@ -14,7 +14,7 @@ class ArrayUtils{
 
     clone(original){
         
-        return original;
+        return original.slice();
     }
 
     subArray(original, from, to){
