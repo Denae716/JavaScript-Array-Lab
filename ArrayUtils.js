@@ -1,8 +1,16 @@
 class ArrayUtils{
 
-    isEmpty(array){return false;}
 
-    append(original, value){return original;}
+     isEmpty(array){
+        if (array.length === 0){
+        return false;
+        }
+    }
+    
+    append(original, value){
+        
+        return original;
+    }
 
     clone(original){return original;}
 
@@ -19,3 +27,7 @@ class ArrayUtils{
     reverse(original){}
     
 }
+
+isEmpty(array){return false;}
+const number = []
+isEmpty(number)
