@@ -34,7 +34,7 @@ class ArrayUtils{
 
     indexOf(original, value){
         
-        return -1;
+        return original.indexOf(value);
     }
 
     remove(original, value){
