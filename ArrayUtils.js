@@ -14,8 +14,11 @@ class ArrayUtils{
     }
 
     clone(original){
-        
-        return original
+        const array = []
+        for(let i = 0; i <= original.length; i++){
+            array += orginal
+        }
+        return array
     }
 
     subArray(original, from, to){
@@ -35,21 +38,31 @@ class ArrayUtils{
 
     indexOf(original, value){
         for (let i = 0; i <= original.length; i ++){
-            i += value
+            if (i === value){
+            return i
+            }
         }
-        return value
+        
     }
 
     remove(original, value){
-        
-        return original;
+        for (let i = 0; i <= original.length; i ++){
+            if (i !== value){
+                value += original[i]
+            }
+        }
+        return orginal;
     
     }
+    
 
     reverse(original){
-
+        return 
     }
     
 }
+const arrayTest = ["hello", "goodbye", 'I love you']
+remove(arrayTest, "hello")
+console.log(arrayTest)
 
 
