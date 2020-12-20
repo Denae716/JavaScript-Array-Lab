@@ -8,9 +8,13 @@ class ArrayUtils{
     }
     
     append(original, value){
-        original 3.
+        for (let i = 0; i <= original.length; i ++){
+            if(i === original.length -1){
+                original += value
+            }
+        }
 
-        return
+        return original
     }
 
     clone(original){
@@ -57,7 +61,11 @@ class ArrayUtils{
     
 
     reverse(original){
-        return 
+        let array = []
+        for(let i = original.length - 1; i >= 0; i--){
+            array += original[i]
+        }
+        return array
     }
     
 }
