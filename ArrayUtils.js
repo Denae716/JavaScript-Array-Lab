@@ -26,8 +26,14 @@ class ArrayUtils{
     }
 
     subArray(original, from, to){
+        let output = ""
+        for(let i = 0; i <= original.length; i ++){
+            for(let j = from[i]; j <= to[i].length; j++){
+                output += j
+            }
+        }
         
-        return original;
+        return output
     }
 
     equals(arr1, arr2){
@@ -37,6 +43,11 @@ class ArrayUtils{
     }
 
     fill(original, value){
+        for(let i = 0; i <= original.length; i ++){
+            if(i === original[i]){
+                original[i] += value
+            }
+        }
 
     }
 
@@ -69,8 +80,5 @@ class ArrayUtils{
     }
     
 }
-const arrayTest = ["hello", "goodbye", 'I love you']
-remove(arrayTest, "hello")
-console.log(arrayTest)
 
 
